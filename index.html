@@ -1,165 +1,377 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="utf-8">
+    <title>&#64;NdiphiweQumba&#64;</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 </head>
+
 <body>
+    <aside>
+        <nav>
+            <img src="../php.jpg" alt="">
+            <a href="#home"><i class="material-icons md-36">home</i>
+                <p>Home</p>
+            </a>
+            <a href="#SoftwareSkills"><i class="material-icons md-36">code</i><p>Software Skils</p></a>
+            <a href="#about"><i class="material-icons md-36">person</i>
+                <p>About</p>
+            </a>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>BR</b> Architects</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
+            <a href="#folio"><i class="material-icons md-36">image</i>
+                <p>Folio</p>
+            </a>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="/w3images/architect.jpg" alt="Architecture" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
-  </div>
-</header>
+            <a href="#contact"><i class="material-icons md-36">mail</i>
+                <p>Contact</p>
+            </a>
+        </nav>
+    </aside>
 
-<!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+    <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#folio">Folio</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-  
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
-
-<!-- End page content -->
-</div>
+    <main>
+        <header class="home" id="home">
+            <h6>NDIPHIWE QUMBA</h6>
+            <h5>Software // System // Developer</h5>
 
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+            <form action="thank.html">
+                <input type="submit" value="Just" >
+            </form>
+        </header>
+        <section class="about" id="about"><br><br>
+            <h2>About Me</h2>
+            <p>
+                <span>Hello, i am Ndiphiwe</span> I am A software designer and a Developer, life long learner, and ready for new opportunities. A bit about me i love music, the art and all the things creativ
+            </p>
+            <p>
+                I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+            </p>
+
+
+        </section>
+        <h2>Software Skills</h2>
+        <section class="softwareskills" id="software">
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <img src="web/visualstudio.png" alt="">
+                        <h2>Microsoft Visual Studio IDE</h2>
+                        <h5>Visual Studio</h5>
+                        <p>MicroSoft Visual Studio Integrated Development Environment, Also MicroSoft Visual Studio Code</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/office.png" alt=""></p>
+                        <h2>MicroSoft Office</h2>
+                        <h5>MicroSoft Office Tools</h5>
+                        <p>Ms PowerPoint, Ms Word, Ms Access, Ms Excel</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/java.png" alt=""></p>
+                        <h2>Java</h2>
+                        <h5>Java Programming Language in IDEs I.E.</h5>
+                        <p>Eclipes IDE, NetBeans, Code</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/Blender.jpeg" alt=""></p>
+                        <h2>Blender</h2>
+                        <h5>Blender3D Software</h5>
+                        <p>Learning and also using tool for modelling simple 3D Objects</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/unity_3.png" alt=""></p>
+                        <h2>Blender</h2>
+                        <h5>Blender3D Software</h5>
+                        <p>Learning and also using tool for modelling simple 3D Objects</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/git.png" alt=""></p>
+                        <h2>Blender</h2>
+                        <h5>Blender3D Software</h5>
+                        <p>Learning and also using tool for modelling simple 3D Objects</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/git.png" alt=""></p>
+                        <h2>KSDJf;kjg;s</h2>
+                        <h5>Just nopw</h5>
+                        <p>Learning and also using tool for modelling simple 3D Objects</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <p><img src="web/git.png" alt=""></p>
+                        <h2>Blender</h2>
+                        <h5>Blender3D Software</h5>
+                        <p>Learning and also using tool for modelling simple 3D Objects</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="computer_programming" id="coding">
+
+            <h3>Computer Programming Skills</h3>
+            <p>C Sharp</p>
+            <div class="container">
+                <div class="skills Csharp">65%</div>
+            </div>
+
+            <p>HTML 5</p>
+            <div class="container">
+                <div class="skills html">75%</div>
+            </div>
+
+            <p>CSS 3</p>
+            <div class="container">
+                <div class="skills css">55%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+                <div class="skills js">65%</div>
+            </div>
+
+            <p>Jquery</p>
+            <div class="container">
+                <div class="skills jquery">40%</div>
+            </div>
+
+
+        </section>
+
+        <section class="folio" id="folio">
+            <h2>Folio</h2>
+
+            <div class="row-halves">
+                <div class="col">
+                    <img src="web/silver-imac-displaying-collage-photos-1779487.jpg" alt="">
+                    <h3>Business</h3>
+                    <p>
+                        Building Responsive and thoughtful sites for small and growing businesses
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="web/abstract-business-code-coding-276452.jpg" alt="">
+                    <h3>Mobile</h3>
+                    <p>
+                        Building Responsive and thoughtful sites and Apps for small and growing businesses
+                        <ul>
+                            <li>
+                                Mobile App Developement Using Angular UI mobile app development framework.
+                                <p><a href="Angular.html"><b>Click For More</b></a></p>
+                            </li>
+
+                        </ul>
+                </div>
+
+            </div>
+
+            <div class="row-halves">
+                <div class="col">
+                    <img src="web/ThinkDiff.jpg" alt="">
+                    <h3>UX Design</h3>
+                    <p>
+                        Thoughtful and intuitive user experiences. All of my designs will be guaranted
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="web/people-sitting-beside-brown-wooden-desk-near-flat-screen-tv-1181355.jpg" alt="">
+                    <h3>Personal</h3>
+                    <p>
+                        i also design and build for personal projects. no idea is too small and everyone deserves a voice on the web.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="tabbed">
+                <input type="radio" name="tabs" id="tab-nav-1" checked>
+                <label for="tab-nav-1">HTML</label>
+                <input type="radio" name="tabs" id="tab-nav-2">
+                <label for="tab-nav-2">CSS</label>
+                <input type="radio" name="tabs" id="tab-nav-3">
+                <label for="tab-nav-3">C Sharp</label>
+                <input type="radio" name="tabs" id="tab-nav-4">
+                <label for="tab-nav-4">JS</label>
+
+                <div class="tabs">
+                    <div>
+                        <h2>HTML</h2>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h2>CSS</h2>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h2>C Sharp</h2>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h2>JS</h2>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+                        </p>
+                        <p>
+                            I believe in user centered design and delivering the best possible experiences to people. i have experience with html, css, bootstrap, FlexBox, Javascript, JQuery, Ruby and Rails, Git, Github, Figma and photoshop
+
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <section class="contact" id="contact">
+
+            <h2>Contact Me</h2>
+
+            <div class="container">
+
+                <form action="thank.html">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" sytle="height:200px"></textarea>
+                    <input type="submit" value="message">
+                </form>
+
+            </div>
+
+        </section>
+        <footer>
+            <section class="top-bar">
+                <a href=""><i class="fab fa-facebook-fa">Facebook</i></a>
+                <a href=""><i class="fab fa-twitter">Twitter</i></a>
+                <a href=""><i class="fab fa-github"></i>GitHub</a>
+
+            </section>
+
+            <section class="bottom-bar">
+                <p> &copy; 2019 | All rights reserved</p>
+                <p> Ndira.com &reg;</p>
+            </section>
+
+        </footer>
+    </main>
+
+
+    <script type="text/javascript">
+    </script>
 
 </body>
-</html>
 
+</html>
