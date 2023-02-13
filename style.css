@@ -25,7 +25,6 @@ img {
 }
 
 .home img {
-    width: 100%;
     -webkit-filter: grayscale(80%) contrast (100%);
     filter: grayscale(100%) contrast(100%) brightness(100%);
 }
@@ -43,7 +42,10 @@ img {
     position: relative;
     min-width: 220px;
     height: 260px;
-    box-shadow: inset 5px 5px 5px rgba(110, 89, 89, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 5px 5px 5px rgba(110, 89, 89, 0.2), 
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1), 
+            5px 5px 15px rgba(0, 0, 0, 0.3), 
+            -5px -5px 15px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     margin: 10px;
 }
@@ -53,23 +55,18 @@ img {
     padding: 0px;
 }
 
-
-/* .softwareskills .card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-} */
+.softwareskills .card h4 {
+    position: relative;
+    padding: 10px;
+    margin-bottom :5px;
+}
 
 .softwareskills .card .box {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
     background: #2a2b2f;
     border-radius: 15px;
     box-shadow: 0, 20px, 50px, rgba(0, 0, 0, 0.5);
@@ -80,20 +77,20 @@ img {
     overflow: hidden;
 }
 
-.softwareskills .card .box:hover {
-    transform: translateY(-50px);
-    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
-}
-
 .softwareskills .card .box .content {
     padding: 20px;
     text-align: center;
 }
 
+.softwareskills .card .box:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
 .softwareskills .card .box .content img {
-    width: 40%;
-    padding-right: 5%;
-    padding-bottom: -5%;
+    width: 20%;
+    padding-right: 2%;
+    padding-bottom: -2%;
 }
 
 .softwareskills .card .box .content h5 {
@@ -104,44 +101,53 @@ img {
 }
 
 .softwareskills .card .box .content p {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.5);
     z-index: 1;
     transition: 0.5s;
 }
 
-.softwareskills .card .box .content a {
+.softwareskills .card .box  a {
     position: relative;
     display: inline-block;
-    padding: 8px 20px;
+    padding: 8px 13px;
     background: #000;
     margin-top: 20px;
     border-radius: 20px;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 200;
     color: #fff;
+    font-size: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.softwareskills .card:nth-child(1) .box .content a {
-    background: #2196f3;
+.softwareskills .card .box  a:hover
+{
+    color: #fff;
 }
 
+.softwareskills .card:nth-child(1) .box .content a {
+    background: #000;
+}
+.interactive
+{
+    margin-left: 50px;
+}
 .softwareskills .card:nth-child(2) .box .content a {
-    background: #2196f3;
+    background: #000;
 }
 
 .softwareskills .card:nth-child(3) .box .content a {
-    background: #2196f3;
+    background: #000;
 }
 
 .softwareskills .card:nth-child(4) .box .content a {
-    background: #2196f3;
+    background: #000;
 }
 
 .softwareskills .card:nth-child(5) .box .content a {
-    background: #2196f3;
+    background: #000;
 }
 
 .softwareskills text {
@@ -338,30 +344,40 @@ label {
 .tabbed {
     width: 100%;
     margin: 50px auto;
+    margin-top:5em;
 }
 
 .tabbed>input {
     display: none;
+    margin-left: 5em;
 }
 
 .tabbed>label {
+    margin-left: .5em;
     display: block;
+    width:110px;
     float: left;
-    padding: 12px 20px;
-    margin-right: 10px;
+    padding: 20px 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+.tabbed>label:nth-of-type(1)
+{
+    margin-left:5em;
 }
 
 .tabbed>label:hover,
 .tabbed>input:checked+label {
     background: #e91e73;
+    margin-bottom: .5em;
+    text-align: center;
 }
 
 .tabs {
     clear: both;
     perspective: 599px;
-    margin-left: -50px;
+    margin-left: -25px;
+    margin-bottom: 4em;
 }
 
 .tabs>div {
@@ -375,6 +391,7 @@ label {
     transform-origin: top center;
     transition: opacity 0.3s, transform 1s;
     z-index: 0;
+    text-align: center;
     border-radius: 50px;
 }
 
@@ -526,5 +543,12 @@ input[type="submit"]:hover {
 @media (min-width: 600px) {
     .mobile-nav {
         display: none;
+    }
+}
+
+@media (min-width:320px)
+{
+    .softwareskills .card
+    {
     }
 }
