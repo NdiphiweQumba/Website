@@ -10,14 +10,15 @@
 </head>
 
 <body>
-    <aside>
+    <aside id="side-panel">
+        <button class="toggle-btn" onclick="toggleSidePanel()"></button>
         <nav>
             <img src="../php.jpg" alt="">
             <a href="#home"><i class="material-icons md-36">home</i>
                 <p>Home</p>
             </a>
-            <a href="#SoftwareSkills"><i class="material-icons md-36">code</i>
-                <p>Software Skils</p>
+            <a href="#software"><i class="material-icons md-36">code</i>
+                <p>Software Skills</p>
             </a>
             <a href="#about"><i class="material-icons md-36">person</i>
                 <p>About</p>
@@ -43,12 +44,11 @@
     <main>
         <header class="home" id="home">
             <h6>NDIPHIWE QUMBA</h6>
-            <h5>Software // System // Developer</h5>
+            <h5>3D Software // Game // Developer</h5>
 
-
-            <form action="thank.html">
-                <input type="submit" value="Just">
-            </form>
+            <a href="mailto:Ndiphiwecaeser@gmail.com">
+                <button type="button">Contact Me</button>
+            </a>
         </header>
         <section class="about" id="about"><br><br>
             <h2>About Me</h2>
@@ -107,7 +107,7 @@
             <div class="card">
                 <div class="box">
                     <div class="content">
-                        <p><img src="web/unity_3.png" alt=""></p>
+                        <p><img src="web/unity_3.png" alt="Unity 3D logo"></p>
                         <h4>Unity 3D</h4>
                         <p>Unity 3D C# Developer</p>
                         <a  target="_blank" href="unityproject.html">Read More</a>
@@ -138,7 +138,7 @@
                 <div class="box">
                     <div class="content">
                         <p><img src="web/git.png" alt=""></p>
-                        <h4>Web Projeccts</h4>
+                        <h4>Web Projects</h4>
                         <p>Website made with html, css, bootstrap, Javascript, php</p>
                         <a href="webprojects.html">Read More</a>
                     </div>
@@ -185,7 +185,7 @@
                     <p>Building Responsive and thoughtful sites and Apps for small and growing businesses
                     <ul>
                         <li>
-                            Mobile App Developement Using Angular UI mobile app development framework.
+                            Mobile App Development Using Angular UI mobile app development framework.
                             <p><a href="Angular.html"><b>Click For More</b></a></p>
                         </li>
                     </ul>
@@ -197,7 +197,7 @@
                     <img src="web/ThinkDiff.jpg" alt="">
                     <h3>UX Design</h3>
                     <p>
-                        Thoughtful and intuitive user experiences. All of my designs will be guaranted
+                        Thoughtful and intuitive user experiences. All of my designs will be guaranteed
                     </p>
                 </div>
                 <div class="col">
@@ -352,7 +352,11 @@
 
 
     <script type="text/javascript">
+        function toggleSidePanel() {
+            const sidePanel = document.getElementById('side-panel');
+            sidePanel.classList.toggle('minimized');
+        }
     </script>
 
 </body>
-</html>
+</html> 
