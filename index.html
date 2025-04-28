@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("YfbWffzmxmsi1PRJz"); // Replace with your actual user ID from EmailJS dashboard
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -318,45 +326,64 @@
 
         </section>
         <section class="contact" id="contact">
-
             <h2>Contact Me</h2>
-
+        
             <div class="container">
-
-                <form action="thank.html">
+                <form id="contact-form">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
+        
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" required>
+        
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" sytle="height:200px"></textarea>
-                    <input type="submit" value="message">
+                    <textarea name="message" id="message" style="height:200px" required></textarea>
+        
+                    <input type="submit" value="Send Message">
                 </form>
-
+        
+                <div id="form-response"></div>
             </div>
         </section>
-
+        
         <footer>
             <section class="top-bar">
-                <a href="#"><i class="fab fa-facebook-fa">Facebook</i></a>
-                <a href="#"><i class="fab fa-twitter">Twitter</i></a>
-                <a href="https://github.com/NdiphiweQumba"><i class="fab fa-github"></i>GitHub</a>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://github.com/NdiphiweQumba"><i class="fab fa-github"></i> GitHub</a>
             </section>
-
+        
             <section class="bottom-bar">
-                <p> &copy; 2023 | All rights reserved</p>
-                <p> Ndira.com &reg;</p>
+                <p>&copy; 2023 | All rights reserved</p>
+                <p>Ndira.com &reg;</p>
             </section>
         </footer>
-    </main>
-
-
-    <script type="text/javascript">
-        function toggleSidePanel() {
-            const sidePanel = document.getElementById('side-panel');
-            sidePanel.classList.toggle('minimized');
-        }
-    </script>
-
+        
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("cRGh_kf4jJ_LttwaP"); // Replace "YOUR_PUBLIC_KEY" with the actual public key from your EmailJS dashboard
+            })();
+        
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+        
+                emailjs.sendForm('service_pjnwvw5', 'template_fhfx3ys', this) // Replace with your actual service ID and template ID
+                    .then(function(response) {
+                        document.getElementById('form-response').innerText = '✅ Message sent successfully!';
+                    }, function(error) {
+                        document.getElementById('form-response').innerText = '❌ Failed to send message. Please try again.';
+                        console.error('FAILED...', error);
+                    });
+        
+                this.reset();
+            });
+        
+            function toggleSidePanel() {
+                const sidePanel = document.getElementById('side-panel');
+                sidePanel.classList.toggle('minimized');
+            }
+        </script>
+        <script src="main.js"></script>
 </body>
-</html> 
+</html>
