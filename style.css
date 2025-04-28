@@ -191,13 +191,14 @@ aside .toggle-btn {
     align-items: center;
     cursor: pointer;
     z-index: 2;
-    background-image: url('img/arrow-right.png');
+    background-image: url('img/arrow.png');
     background-size: cover;
     transition: transform 0.3s ease-in-out;
 }
 
 aside.minimized .toggle-btn {
-    background-image: url('img/arrow-left.png');
+    background-image: url('img/arrow.png');
+    transform: rotate(180deg);
 }
 
 aside img {
@@ -315,17 +316,23 @@ header h5 {
     color: white;
     background-color: #424242;
 }
-
+.skill-level {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #00bfff; /* Light Blue accent */
+}
 .Csharp {
-    width: 65%;
+    width: 80%;
 }
 
 .html {
-    width: 75%;
+    width: 95%;
 }
 
 .css {
-    width: 55%;
+    width: 85%;
 }
 
 .js {
