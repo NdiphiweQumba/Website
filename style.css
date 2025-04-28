@@ -713,3 +713,47 @@ input[type="submit"]:hover {
         padding: 10px;
     }
 }
+
+
+#portfolio {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #121212; /* Match your dark theme */
+    color: #ffffff;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.15);
+}
+
+.game-video {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #cccccc;
+}
