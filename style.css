@@ -130,15 +130,27 @@ img {
     color: #fff;
 }
 
-.softwareskills .card:nth-child(1) .box .content a {
-    background: #000;
+.softwareskills .card:nth-child(1) .box .none a {
+    background: #312b2b;
+    color:grey;
+    cursor: not-allowed;
+}
+
+.softwareskills .card:nth-child(8) .box .none a {
+    background: #312b2b;
+    color:grey;
+    opacity: 0.6; /* Make it look faded or disabled */
+    pointer-events: none; /* Disable any interactions (e.g., clicks) */
+    cursor: not-allowed;
 }
 .interactive
 {
     margin-left: 50px;
 }
 .softwareskills .card:nth-child(2) .box .content a {
-    background: #000;
+    background: #312b2b;
+    color:grey;
+    cursor: not-allowed;
 }
 
 .softwareskills .card:nth-child(3) .box .content a {
@@ -146,12 +158,23 @@ img {
 }
 
 .softwareskills .card:nth-child(4) .box .content a {
-    background: #000;
+    background:  #312b2b;
+    color:grey;
+    cursor: not-allowed;
 }
 
 .softwareskills .card:nth-child(5) .box .content a {
-    background: #000;
+    background:  #312b2b;
+    color:grey;
+    cursor: not-allowed;
 }
+
+.softwareskills .card:nth-child(6) .box .content a {
+    background:  #312b2b;
+    color:grey;
+    cursor: not-allowed;
+}
+
 
 .softwareskills text {
     padding-right: 80%;
@@ -324,7 +347,7 @@ header h5 {
     color: #00bfff; /* Light Blue accent */
 }
 .Csharp {
-    width: 80%;
+    width: 85%;
 }
 
 .html {
@@ -332,15 +355,15 @@ header h5 {
 }
 
 .css {
-    width: 85%;
+    width: 55%;
 }
 
 .js {
     width: 65%;
 }
 
-.jquery {
-    width: 40%
+.cpp{
+    width: 50%
 }
 
 .folio h3 {
@@ -581,14 +604,7 @@ input[type="submit"]:hover {
         display: none;
     }
 }
-
-@media (min-width:320px)
-{
-    .softwareskills .card
-    {
-    }
-}
-
+ 
 /* Responsive Styles */
 @media (max-width: 1024px) {
     main {
