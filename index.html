@@ -370,9 +370,19 @@
         
                 emailjs.sendForm('service_pjnwvw5', 'template_fhfx3ys', this) // Replace with your actual service ID and template ID
                     .then(function(response) {
-                        document.getElementById('form-response').innerText = '✅ Message sent successfully!';
+                        const formResponse = document.getElementById('form-response');
+                        formResponse.innerText = '✅ Message sent successfully!';
+                        formResponse.style.textAlign = 'center';
+                        setTimeout(() => {
+                            formResponse.innerText = '';
+                        }, 5000);
                     }, function(error) {
-                        document.getElementById('form-response').innerText = '❌ Failed to send message. Please try again.';
+                        const formResponse = document.getElementById('form-response');
+                        formResponse.innerText = '❌ Failed to send message. Please try again.';
+                        formResponse.style.textAlign = 'center';
+                        setTimeout(() => {
+                            formResponse.innerText = '';
+                        }, 5000);
                         console.error('FAILED...', error);
                     });
         
