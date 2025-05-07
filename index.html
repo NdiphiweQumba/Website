@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
-            emailjs.init("YfbWffzmxmsi1PRJz"); 
+            emailjs.init("OJ0I6VJx58EQ7LLx5"); 
         })();
     </script>
 
@@ -294,18 +294,12 @@
             </section>
         </footer>
         
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
         <script type="text/javascript">
-            (function(){
-                emailjs.init({
-                    publicKey: "cRGh_kf4jJ_LttwaP",
-                });
-            })();
-        
             document.getElementById('contact-form').addEventListener('submit', function(e) {
                 e.preventDefault();
         
-                emailjs.sendForm('52mill5', 'template_fhfx3ys', this)
+                emailjs.sendForm('52mill5', 'template_94sqxtc', this)
                     .then(function(response) {
                         document.getElementById('form-response').innerText = '✅ Message sent successfully!';
                     }, function(error) {
