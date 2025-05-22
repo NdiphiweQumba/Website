@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-dark text-white">
+    <nav class="navbar">
+        <div class="logo">Ndiphiwe Dev</div>
+        <ul class="nav-links">
+            <li><a href="index.html#software">Main Page</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
     <section id="portfolio">
         <h2>My Game Projects</h2>
         <div class="portfolio-grid">
@@ -60,6 +68,26 @@
     
         </div>
     </section>
+    <section id="contact" class="contact-section">
+        <h2>Let’s Work Together</h2>
+        <p>Have a project or idea in mind? Drop me a message and let's bring it to life.</p>
+        <a href="#" onclick="handleContactClick()" class="contact-btn">Contact Me</a>
+         <p class="text-sm text-gray-400 mt-3">On mobile? It opens WhatsApp 📱</p>
+    </section>
+    <script>
+        function handleContactClick() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const isMobile = /android|iphone|ipad|ipod/i.test(userAgent);
+
+            if (isMobile) {
+                // WhatsApp link for mobile
+                window.open("https://wa.me/0660241324?text=Hi%20Zee%2C%20I%20found%20your%20portfolio%20site%20and%20wanted%20to%20connect!", "_blank");
+            } else {
+                // Email link for desktop
+                window.location.href = "mailto:Ndiphiwecaeser@gmail.com?subject=Game%20Dev%20Inquiry";
+            }
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

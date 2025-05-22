@@ -267,14 +267,17 @@
                 <form id="contact-form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
+                    <span id="name-error" class="field-error-msg"></span>
         
                     <label for="email">E-mail</label>
                     <input type="text" id="email" name="email" required>
-        
+                    <span id="email-error" class="field-error-msg"></span>
+
                     <label for="message">Message</label>
                     <textarea name="message" id="message" style="height:200px" required></textarea>
-        
-                    <input type="submit" value="Send Message">
+                    <span id="message-error" class="field-error-msg"></span>
+                    <input type="hidden" name="time" id="time-input">
+                    <input type="submit" onclick="validateContactForm()" value="Send Message">
                 </form>
         
                 <div id="form-response"></div>
@@ -286,6 +289,8 @@
                 <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
                 <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
                 <a href="https://github.com/NdiphiweQumba"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ndiphiwe-qumba" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+</section>
             </section>
         
             <section class="bottom-bar">
@@ -293,28 +298,7 @@
                 <p>Ndira.com &reg;</p>
             </section>
         </footer>
-        
-
-        <script type="text/javascript">
-            document.getElementById('contact-form').addEventListener('submit', function(e) {
-                e.preventDefault();
-        
-                emailjs.sendForm('52mill5', 'template_94sqxtc', this)
-                    .then(function(response) {
-                        document.getElementById('form-response').innerText = '✅ Message sent successfully!';
-                    }, function(error) {
-                        document.getElementById('form-response').innerText = '❌ Failed to send message. Please try again.';
-                        console.error('FAILED...', error);
-                    });
-        
-                this.reset();
-            });
-        
-            function toggleSidePanel() {
-                const sidePanel = document.getElementById('side-panel');
-                sidePanel.classList.toggle('minimized');
-            }
-        </script>
+        </main>
         <script src="main.js"></script>
 </body>
 </html> 
